@@ -1,0 +1,27 @@
+{
+  "name": "ddaanet",
+  "owner": {
+    "name": "David Allouche",
+    "email": "david@ddaa.net"
+  },
+  "metadata": {
+    "description": "Personal plugin collection by ddaanet."
+  },
+  "plugins": [
+    {
+      "name": "ddaanet",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/skills"
+      },
+      "description": "Bilingual skills — briefing, handoff, preflight validation, structured proofreading, and skill creation.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche"
+      },
+      "repository": "https://github.com/ddaanet/skills",
+      "license": "MIT",
+      "keywords": ["bilingual", "french", "english", "proofreading", "handoff", "preflight"]
+    }
+  ]
+}
