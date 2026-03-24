@@ -9,7 +9,7 @@
   },
   "plugins": [
     {
-      "name": "ddaanet",
+      "name": "ddaa",
       "source": {
         "source": "github",
         "repo": "ddaanet/skills"
