@@ -22,6 +22,20 @@
       "repository": "https://github.com/ddaanet/skills",
       "license": "MIT",
       "keywords": ["bilingual", "french", "english", "proofreading", "handoff", "preflight"]
+    },
+    {
+      "name": "edify",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/edify-plugin"
+      },
+      "description": "Opinionated agent framework for Claude Code",
+      "author": {
+        "name": "David Allouche"
+      },
+      "repository": "https://github.com/ddaanet/edify-plugin",
+      "license": "MIT",
+      "keywords": ["agent-framework", "workflows", "skills", "hooks"]
     }
   ]
 }
