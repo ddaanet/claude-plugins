@@ -8,35 +8,18 @@ A Claude Code plugin **marketplace** — a registry that lets users discover and
 
 ## Key File
 
-`.claude-plugin/marketplace.json` — the marketplace manifest. Schema reference: https://code.claude.com/docs/en/plugins-reference
+`.claude-plugin/marketplace.json` — the marketplace manifest. Schema: https://code.claude.com/docs/en/plugins-reference
 
-### Manifest Structure
-
-- `name`: marketplace identifier (`ddaanet`), used in `/plugin install <plugin>@ddaanet`
-- `owner`: maintainer info (name, optional email)
-- `metadata.description`: brief marketplace description
-- `plugins[]`: array of plugin entries, each with:
-  - `name` (required): plugin identifier, used in install commands
-  - `source` (required): object with `source: "github"` and `repo: "owner/repo"` (can also use `ref`/`sha` to pin)
-  - Optional: `description`, `version`, `author`, `repository`, `license`, `keywords`, `category`
-
-All plugins in this marketplace use GitHub sources (`"source": "github"`). The actual plugin code lives in the referenced repos, not here.
-
-### Strict Mode
-
-Default is `strict: true` — the plugin's own `plugin.json` is authoritative; marketplace entries only supplement. Set `strict: false` on an entry to make the marketplace definition the entire plugin definition (no `plugin.json` needed in the target repo).
+Each `plugins[]` entry needs `name` and `source` (GitHub object with `repo`). Optional fields: `description`, `version`, `author`, `repository`, `license`, `keywords`. `strict: false` makes the marketplace entry the full definition (default `true` defers to the plugin's own `plugin.json`).
 
 ## Validation
 
-```
-claude plugin validate .
-```
-
-Or inside Claude Code: `/plugin validate .`
+`claude plugin validate .` (CLI) or `/plugin validate .` (inside Claude Code)
 
 ## Conventions
 
 - Git remote is named `github` (not `origin`).
+- Push: `git push github main`
 - Commit messages use emoji prefixes (e.g. `🎉`, `📝`, `🏷️`).
 - Keep `README.md` and `marketplace.json` in sync — any plugin listed in one must appear in the other.
 
