@@ -44,7 +44,7 @@
         "repo": "ddaanet/handoff"
       },
       "description": "Pre-/clear task snapshot for Claude Code: agent notes current task + open decisions, a Stop hook composes them with auto-extracted last-N user prompts and files touched from the session JSONL.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "David Allouche"
       },
