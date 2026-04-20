@@ -36,6 +36,36 @@
       "repository": "https://github.com/ddaanet/edify-plugin",
       "license": "MIT",
       "keywords": ["agent-framework", "workflows", "skills", "hooks"]
+    },
+    {
+      "name": "handoff",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/handoff"
+      },
+      "description": "Pre-/clear task snapshot for Claude Code: agent notes current task + open decisions, a Stop hook composes them with auto-extracted last-N user prompts and files touched from the session JSONL.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche"
+      },
+      "repository": "https://github.com/ddaanet/handoff",
+      "license": "MIT",
+      "keywords": ["handoff", "context", "session", "clear", "stop-hook"]
+    },
+    {
+      "name": "gitmoji",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/gitmoji"
+      },
+      "description": "Commit-msg git hook that replaces conventional-commit prefixes (feat:, fix:, docs:, ...) with gitmoji emojis. Ships an installer command that stows the hook into the current git repo.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche"
+      },
+      "repository": "https://github.com/ddaanet/gitmoji",
+      "license": "MIT",
+      "keywords": ["git", "gitmoji", "commit-msg", "hook", "conventional-commits"]
     }
   ]
 }
