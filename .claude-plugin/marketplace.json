@@ -11,8 +11,8 @@
     {
       "name": "ddaa",
       "source": {
-        "source": "github",
-        "repo": "ddaanet/skills",
+        "source": "git-subdir",
+        "url": "ddaanet/skills",
         "path": "plugins/ddaa"
       },
       "description": "Skills (EN) — brief, preflight, proof, bilingual skill creator.",
@@ -27,8 +27,8 @@
     {
       "name": "ddaa-fr",
       "source": {
-        "source": "github",
-        "repo": "ddaanet/skills",
+        "source": "git-subdir",
+        "url": "ddaanet/skills",
         "path": "plugins/ddaa-fr"
       },
       "description": "Skills (FR) — brief, preflight, relecture.",
