@@ -12,16 +12,33 @@
       "name": "ddaa",
       "source": {
         "source": "github",
-        "repo": "ddaanet/skills"
+        "repo": "ddaanet/skills",
+        "path": "plugins/ddaa"
       },
-      "description": "Bilingual skills — briefing, handoff, preflight validation, structured proofreading, and skill creation.",
+      "description": "Skills (EN) — brief, preflight, bilingual skill creator.",
       "version": "0.1.0",
       "author": {
         "name": "David Allouche"
       },
       "repository": "https://github.com/ddaanet/skills",
       "license": "MIT",
-      "keywords": ["bilingual", "french", "english", "proofreading", "handoff", "preflight"]
+      "keywords": ["brief", "preflight", "skill-creator", "english"]
+    },
+    {
+      "name": "ddaa-fr",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/skills",
+        "path": "plugins/ddaa-fr"
+      },
+      "description": "Skills (FR) — brief, preflight.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche"
+      },
+      "repository": "https://github.com/ddaanet/skills",
+      "license": "MIT",
+      "keywords": ["brief", "preflight", "french", "français"]
     },
     {
       "name": "edify",
