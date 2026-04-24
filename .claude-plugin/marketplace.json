@@ -15,14 +15,14 @@
         "repo": "ddaanet/skills",
         "path": "plugins/ddaa"
       },
-      "description": "Skills (EN) — brief, preflight, bilingual skill creator.",
-      "version": "0.1.0",
+      "description": "Skills (EN) — brief, preflight, proof, bilingual skill creator.",
+      "version": "0.1.1",
       "author": {
         "name": "David Allouche"
       },
       "repository": "https://github.com/ddaanet/skills",
       "license": "MIT",
-      "keywords": ["brief", "preflight", "skill-creator", "english"]
+      "keywords": ["brief", "preflight", "proof", "skill-creator", "english"]
     },
     {
       "name": "ddaa-fr",
@@ -31,14 +31,14 @@
         "repo": "ddaanet/skills",
         "path": "plugins/ddaa-fr"
       },
-      "description": "Skills (FR) — brief, preflight.",
-      "version": "0.1.0",
+      "description": "Skills (FR) — brief, preflight, relecture.",
+      "version": "0.1.1",
       "author": {
         "name": "David Allouche"
       },
       "repository": "https://github.com/ddaanet/skills",
       "license": "MIT",
-      "keywords": ["brief", "preflight", "french", "français"]
+      "keywords": ["brief", "preflight", "relecture", "french", "français"]
     },
     {
       "name": "edify",
