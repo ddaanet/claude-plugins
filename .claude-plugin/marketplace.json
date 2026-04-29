@@ -22,7 +22,13 @@
       },
       "repository": "https://github.com/ddaanet/skills",
       "license": "MIT",
-      "keywords": ["brief", "preflight", "proof", "skill-creator", "english"]
+      "keywords": [
+        "brief",
+        "preflight",
+        "proof",
+        "skill-creator",
+        "english"
+      ]
     },
     {
       "name": "ddaa-fr",
@@ -38,7 +44,13 @@
       },
       "repository": "https://github.com/ddaanet/skills",
       "license": "MIT",
-      "keywords": ["brief", "preflight", "relecture", "french", "français"]
+      "keywords": [
+        "brief",
+        "preflight",
+        "relecture",
+        "french",
+        "français"
+      ]
     },
     {
       "name": "edify",
@@ -52,7 +64,12 @@
       },
       "repository": "https://github.com/ddaanet/edify-plugin",
       "license": "MIT",
-      "keywords": ["agent-framework", "workflows", "skills", "hooks"]
+      "keywords": [
+        "agent-framework",
+        "workflows",
+        "skills",
+        "hooks"
+      ]
     },
     {
       "name": "handoff",
@@ -61,13 +78,19 @@
         "repo": "ddaanet/handoff"
       },
       "description": "Pre-/clear task snapshot for Claude Code: agent notes current task + open decisions, a PostToolUse hook composes them with auto-extracted last-N user prompts and files touched from the session JSONL.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": {
         "name": "David Allouche"
       },
       "repository": "https://github.com/ddaanet/handoff",
       "license": "MIT",
-      "keywords": ["handoff", "context", "session", "clear", "stop-hook"]
+      "keywords": [
+        "handoff",
+        "context",
+        "session",
+        "clear",
+        "stop-hook"
+      ]
     },
     {
       "name": "gitmoji",
@@ -82,7 +105,13 @@
       },
       "repository": "https://github.com/ddaanet/gitmoji",
       "license": "MIT",
-      "keywords": ["git", "gitmoji", "commit-msg", "hook", "conventional-commits"]
+      "keywords": [
+        "git",
+        "gitmoji",
+        "commit-msg",
+        "hook",
+        "conventional-commits"
+      ]
     }
   ]
 }
