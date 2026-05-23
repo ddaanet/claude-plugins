@@ -112,6 +112,27 @@
         "hook",
         "conventional-commits"
       ]
+    },
+    {
+      "name": "gitlore",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/gitlore"
+      },
+      "description": "Versioned, shared, git-backed memory for Claude Code.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche"
+      },
+      "repository": "https://github.com/ddaanet/gitlore",
+      "license": "MIT",
+      "keywords": [
+        "memory",
+        "git",
+        "submodule",
+        "semantic-merge",
+        "claude-code"
+      ]
     }
   ]
 }
