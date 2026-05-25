@@ -114,6 +114,27 @@
       ]
     },
     {
+      "name": "double-shot-latte",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/double-shot-latte"
+      },
+      "description": "Auto-continue stop hook: uses a Claude judge to decide if the agent should keep working instead of stopping prematurely.",
+      "version": "1.2.0",
+      "author": {
+        "name": "Jesse Duffield",
+        "url": "https://github.com/obra"
+      },
+      "repository": "https://github.com/ddaanet/double-shot-latte",
+      "license": "MIT",
+      "keywords": [
+        "stop-hook",
+        "auto-continue",
+        "judge",
+        "continuation"
+      ]
+    },
+    {
       "name": "gitlore",
       "source": {
         "source": "github",
