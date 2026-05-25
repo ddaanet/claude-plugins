@@ -18,8 +18,8 @@ Each `plugins[]` entry needs `name` and `source` (GitHub object with `repo`). Op
 
 ## Conventions
 
-- Git remote is named `github` (not `origin`).
-- Push: `git push github main`
+- Git remote is named `origin`.
+- Push: `git push origin main`
 - Commit messages use emoji prefixes (e.g. `🎉`, `📝`, `🏷️`).
 - Keep `README.md` and `marketplace.json` in sync — any plugin listed in one must appear in the other.
 
