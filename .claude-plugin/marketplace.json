@@ -156,6 +156,27 @@
         "semantic-merge",
         "claude-code"
       ]
+    },
+    {
+      "name": "onekeys",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/onekeys"
+      },
+      "description": "UserPromptSubmit hook that expands single-character prompts into full instructions (c → Continue, h → /handoff:handoff). Mappings live in ~/.claude/onekeyers.txt.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche"
+      },
+      "repository": "https://github.com/ddaanet/onekeys",
+      "license": "MIT",
+      "keywords": [
+        "prompt",
+        "shorthand",
+        "userpromptsubmit",
+        "hook",
+        "expansion"
+      ]
     }
   ]
 }
