@@ -164,7 +164,7 @@
         "repo": "ddaanet/autoname"
       },
       "description": "Title the current Claude Code session from conversation context. The /autoname skill picks a concise title and, inside tmux, types /rename for you once the prompt goes idle; otherwise it prints a /rename line to paste.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "David Allouche"
       },
