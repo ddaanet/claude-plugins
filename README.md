@@ -18,6 +18,7 @@ Claude Code plugin marketplace by [ddaanet](https://github.com/ddaanet).
 | [gitmoji](https://github.com/ddaanet/gitmoji) | Commit-msg hook that rewrites conventional-commit prefixes (feat:, fix:, ...) into gitmoji emojis | `ddaanet/gitmoji` |
 | [double-shot-latte](https://github.com/ddaanet/double-shot-latte) | Auto-continue stop hook: uses a Claude judge to decide if the agent should keep working instead of stopping prematurely | `ddaanet/double-shot-latte` |
 | [gitlore](https://github.com/ddaanet/gitlore) | Versioned, shared, git-backed memory — Claude Code's auto-memory in a git submodule, with semantic merge on divergence | `ddaanet/gitlore` |
+| [autoname](https://github.com/ddaanet/autoname) | Title the current Claude Code session from conversation context; inside tmux, types `/rename` for you once the prompt goes idle | `ddaanet/autoname` |
 
 Install a plugin:
 

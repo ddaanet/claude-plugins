@@ -158,6 +158,27 @@
       ]
     },
     {
+      "name": "autoname",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/autoname"
+      },
+      "description": "Title the current Claude Code session from conversation context. The /autoname skill picks a concise title and, inside tmux, types /rename for you once the prompt goes idle; otherwise it prints a /rename line to paste.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche"
+      },
+      "repository": "https://github.com/ddaanet/autoname",
+      "license": "MIT",
+      "keywords": [
+        "autoname",
+        "rename",
+        "session",
+        "tmux",
+        "title"
+      ]
+    },
+    {
       "name": "onekeys",
       "source": {
         "source": "github",
