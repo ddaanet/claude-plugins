@@ -1,44 +1,46 @@
-# Handoff — 2026-05-25 15:29:39 +0000
+# Handoff — 2026-06-02 09:51:31 +0000
 
-Session: `8bc8b0c5-1d30-499e-b09a-3b92f64a7ef4`
+Session: `d423f1be-2b88-40a0-9861-f0fbe88d63b6`
 
 ## Current task
 
-Switch local double-shot-latte installation from superpowers-marketplace to the fixed ddaanet fork, then optionally open a PR upstream to obra/double-shot-latte.
+Push and release the two gitlore bug fixes committed in `/Users/david/code/gitlore` (3 commits ahead of origin): `--allow-empty` on initial memory commit, and removal of bogus `gitlore@local` user identity from `init-submodule.sh`.
 
 ## Open decisions
 
-- Whether to open a PR to obra/double-shot-latte upstream (3 commits: BASH_SOURCE fix, CLAUDE_WORK_DIR override, test portability).
+- Whether to bump a patch (0.2.5) or minor version for these fixes.
 
 ## Files touched
-- `/Users/david/.claude/plugins/cache/superpowers-marketplace/double-shot-latte/1.2.0/hooks/run-hook.cmd`
-- `/Users/david/code/double-shot-latte/hooks/run-hook.cmd`
-- `/Users/david/code/double-shot-latte/test/test-working-directory.sh`
-- `/Users/david/code/double-shot-latte/hooks/claude-judge-continuation`
-- `/Users/david/code/claude-plugins/.claude-plugin/marketplace.json`
-- `/Users/david/code/claude-plugins/README.md`
-- `/Users/david/code/claude-plugins/CLAUDE.md`
-- `/Users/david/code/home/.claude/handoff-task.md`
+- `/Users/david/code/gitlore/scripts/install/init-submodule.sh`
+- `/Users/david/code/gitlore/docs/design.md`
+- `/Users/david/code/gitlore/tests/install_run.bats`
+- `/Users/david/code/gitlore/.claude/autorename`
+- `/Users/david/code/gitlore/.claude/handoff-task.md`
+- `/Users/david/code/claude-plugins/.claude/autorename`
 - `/Users/david/code/claude-plugins/.claude/handoff-task.md`
 
 ## Last user prompts
 
-**after Yes — `double-shot-latte` is the right repo. We have one commit pushed (the `run-hook.cmd` fix) and two unstaged changes**
+**after Yes — `init-submodule.sh` uses `git update-index --cacheinfo "160000,${mem_sha},${mempath}"` to register the gitlink, wh**
 
-> yes, atomic commits please
+> actually, the bug is we did not allow empty commit even though there is legit nothing to commit, so maybe just the add the right option to allow empty commit.
+>
+> @../gitlore/docs/design.md 
+>
+> Fix the issue at the source.
 
-**after The sandbox only allows git writes in the `home` project dir. You'll need to run these yourself in `/Users/david/code/do**
+**after Install succeeded. GitHub repo `ddaanet/claude-plugins-memory` was created and `live` was pushed. Staged changes are rea**
 
-> retry
+> There, you are now in the gitlore project. You have context for the changes.
 
-**after Both committed. Three commits ahead of origin — ready to push and open a PR when you are.**
+**after [Write] /Users/david/code/gitlore/.claude/handoff-task.md**
 
-> reade CLAUDE.md there, it's the marketplace
+> amend commit
 
-**after This is your personal `ddaanet` marketplace — it has your own plugins (`ddaa`, `gitmoji`, `handoff`, etc.) but not `doub**
+**after Done.**
 
-> yes, distribute fixed fork to myself
+> The author if the initial commit is not set correctly
 
-**after No fork yet. The plan:**
+**after Both `live` and `main` on the remote now point to the amended commit with the correct author. Everything is staged and r**
 
-> y
+> go
