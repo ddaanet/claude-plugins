@@ -12,13 +12,15 @@ Claude Code plugin marketplace by [ddaanet](https://github.com/ddaanet).
 
 | Plugin | Description | Repo |
 |--------|-------------|------|
-| [ddaa](https://github.com/ddaanet/skills) | Bilingual skills — briefing, handoff, preflight validation, structured proofreading, skill creation | `ddaanet/skills` |
+| [ddaa](https://github.com/ddaanet/skills) | Skills (EN) — brief, preflight, proof, bilingual skill creator, bookkeeping | `ddaanet/skills` |
+| [ddaa-fr](https://github.com/ddaanet/skills) | Skills (FR) — brief, preflight, relecture, saisie comptable | `ddaanet/skills` |
 | [edify](https://github.com/ddaanet/edify-plugin) | Opinionated agent framework for Claude Code | `ddaanet/edify-plugin` |
-| [handoff](https://github.com/ddaanet/handoff) | Pre-/clear task snapshot: agent notes current task, a Stop hook composes them with auto-extracted user prompts and files touched | `ddaanet/handoff` |
+| [handoff](https://github.com/ddaanet/handoff) | Pre-/clear task snapshot: agent notes current task, a hook composes them with auto-extracted user prompts and files touched | `ddaanet/handoff` |
 | [gitmoji](https://github.com/ddaanet/gitmoji) | Commit-msg hook that rewrites conventional-commit prefixes (feat:, fix:, ...) into gitmoji emojis | `ddaanet/gitmoji` |
 | [double-shot-latte](https://github.com/ddaanet/double-shot-latte) | Auto-continue stop hook: uses a Claude judge to decide if the agent should keep working instead of stopping prematurely | `ddaanet/double-shot-latte` |
 | [gitlore](https://github.com/ddaanet/gitlore) | Versioned, shared, git-backed memory — Claude Code's auto-memory in a git submodule, with semantic merge on divergence | `ddaanet/gitlore` |
-| [autoname](https://github.com/ddaanet/autoname) | Title the current Claude Code session from conversation context; inside tmux, types `/rename` for you once the prompt goes idle | `ddaanet/autoname` |
+| [onekeys](https://github.com/ddaanet/onekeys) | UserPromptSubmit hook that expands single-character prompts into full instructions (c → Continue, h → /handoff) | `ddaanet/onekeys` |
+| [cwd-safety](https://github.com/ddaanet/cwd-safety) | Keeps the agent's Bash working directory at project root: blocks drift-inducing `cd` commands and warns when the cwd changes | `ddaanet/cwd-safety` |
 
 Install a plugin:
 
