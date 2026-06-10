@@ -124,7 +124,7 @@
         "repo": "ddaanet/onekeys"
       },
       "description": "UserPromptSubmit hook that expands single-character prompts into full instructions (c → Continue, h → /handoff:handoff). Mappings live in ~/.claude/onekeyers.txt.",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": {
         "name": "David Allouche"
       },
