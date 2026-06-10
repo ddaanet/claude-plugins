@@ -168,7 +168,7 @@
         "repo": "ddaanet/unsandbox-git-status"
       },
       "description": "Forces `git status` to run with the Claude Code command sandbox disabled, so it reports the real working tree instead of phantom sandbox-mount entries.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "David Allouche"
       },
