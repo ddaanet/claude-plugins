@@ -179,6 +179,19 @@
         "pretooluse",
         "claude-code"
       ]
+    },
+    {
+      "name": "candidature",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/candidature"
+      },
+      "description": "Candidature assistée : préparation, lettre de motivation, CV adapté, relecture, suivi des retours. Stockage Notion. Contenu français.",
+      "version": "0.5.0",
+      "author": { "name": "David Allouche" },
+      "repository": "https://github.com/ddaanet/candidature",
+      "license": "MIT",
+      "keywords": ["candidature", "lettre-de-motivation", "cv", "notion", "francais"]
     }
   ]
 }
