@@ -202,6 +202,21 @@
         "notion",
         "francais"
       ]
+    },
+    {
+      "name": "shell-scripting",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/shell-scripting"
+      },
+      "description": "Shell scripting gotchas skill plus automatic shellcheck feedback on edited shell files",
+      "version": "0.2.0",
+      "author": {
+        "name": "David Allouche",
+        "email": "david@allouche.net"
+      },
+      "repository": "https://github.com/ddaanet/shell-scripting",
+      "license": "MIT"
     }
   ]
 }
