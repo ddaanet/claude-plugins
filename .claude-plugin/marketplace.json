@@ -15,7 +15,7 @@
         "url": "ddaanet/skills",
         "path": "plugins/ddaa"
       },
-      "description": "Skills (EN) — brief, preflight, proof, bilingual skill creator, bookkeeping, handoff.",
+      "description": "Skills (EN) — brief, preflight, proof, bilingual skill creator, bookkeeping.",
       "version": "0.2.0",
       "author": {
         "name": "David Allouche"
@@ -26,7 +26,6 @@
         "bookkeeping",
         "brief",
         "english",
-        "handoff",
         "preflight",
         "proof",
         "skill-creator"
@@ -39,7 +38,7 @@
         "url": "ddaanet/skills",
         "path": "plugins/ddaa-fr"
       },
-      "description": "Skills (FR) — brief, preflight, relecture, saisie comptable, passation.",
+      "description": "Skills (FR) — brief, preflight, relecture, saisie comptable.",
       "version": "0.2.0",
       "author": {
         "name": "David Allouche"
@@ -50,11 +49,38 @@
         "brief",
         "français",
         "french",
-        "passation",
         "preflight",
         "relecture",
         "saisie-comptable"
       ]
+    },
+    {
+      "name": "ddaa-handoff",
+      "source": {
+        "source": "git-subdir",
+        "url": "ddaanet/skills",
+        "path": "plugins/ddaa-handoff"
+      },
+      "description": "Resume-summary handoff (EN) — end-of-session summary to continue in a new chat, delivered to Notion when available. Enable this OR the lightweight `handoff` plugin, not both.",
+      "version": "0.2.0",
+      "author": { "name": "David Allouche" },
+      "repository": "https://github.com/ddaanet/skills",
+      "license": "MIT",
+      "keywords": ["handoff", "session", "summary", "notion", "english"]
+    },
+    {
+      "name": "ddaa-passation",
+      "source": {
+        "source": "git-subdir",
+        "url": "ddaanet/skills",
+        "path": "plugins/ddaa-passation"
+      },
+      "description": "Passation résumé de session (FR) — résumé de fin de session pour continuer dans un nouveau chat, livré sur Notion quand c'est disponible. Activer celui-ci OU le plugin `handoff` léger, pas les deux.",
+      "version": "0.2.0",
+      "author": { "name": "David Allouche" },
+      "repository": "https://github.com/ddaanet/skills",
+      "license": "MIT",
+      "keywords": ["passation", "handoff", "session", "notion", "francais"]
     },
     {
       "name": "handoff",
