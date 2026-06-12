@@ -63,10 +63,18 @@
       },
       "description": "Resume-summary handoff (EN) — end-of-session summary to continue in a new chat, delivered to Notion when available. Enable this OR the lightweight `handoff` plugin, not both.",
       "version": "0.2.0",
-      "author": { "name": "David Allouche" },
+      "author": {
+        "name": "David Allouche"
+      },
       "repository": "https://github.com/ddaanet/skills",
       "license": "MIT",
-      "keywords": ["handoff", "session", "summary", "notion", "english"]
+      "keywords": [
+        "handoff",
+        "session",
+        "summary",
+        "notion",
+        "english"
+      ]
     },
     {
       "name": "ddaa-passation",
@@ -77,10 +85,18 @@
       },
       "description": "Passation résumé de session (FR) — résumé de fin de session pour continuer dans un nouveau chat, livré sur Notion quand c'est disponible. Activer celui-ci OU le plugin `handoff` léger, pas les deux.",
       "version": "0.2.0",
-      "author": { "name": "David Allouche" },
+      "author": {
+        "name": "David Allouche"
+      },
       "repository": "https://github.com/ddaanet/skills",
       "license": "MIT",
-      "keywords": ["passation", "handoff", "session", "notion", "francais"]
+      "keywords": [
+        "passation",
+        "handoff",
+        "session",
+        "notion",
+        "francais"
+      ]
     },
     {
       "name": "handoff",
@@ -89,7 +105,7 @@
         "repo": "ddaanet/handoff"
       },
       "description": "Pre-/clear task snapshot for Claude Code: agent notes current task + open decisions, a PostToolUse hook composes them with auto-extracted last-N user prompts and files touched from the session JSONL.",
-      "version": "0.6.2",
+      "version": "0.7.0",
       "author": {
         "name": "David Allouche"
       },
