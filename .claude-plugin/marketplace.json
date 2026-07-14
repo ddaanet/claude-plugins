@@ -189,7 +189,7 @@
         "repo": "ddaanet/cwd-safety"
       },
       "description": "Keeps the agent's Bash working directory at project root: a PreToolUse(Bash) hook blocks drift-inducing `cd` commands and commands run from a drifted cwd; a PostToolUse(Bash) hook warns after the working directory changes.",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": {
         "name": "David Allouche"
       },
