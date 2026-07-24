@@ -104,7 +104,7 @@
         "source": "github",
         "repo": "ddaanet/handoff"
       },
-      "description": "Pre-/clear task snapshot for Claude Code: agent notes current task + open decisions, a PostToolUse hook composes them with auto-extracted last-N user prompts and files touched from the session JSONL.",
+      "description": "Task snapshot that survives a /clear or /compact in Claude Code: the agent writes the current task, open decisions, and remaining todos to a local file, and a SessionStart hook injects it verbatim into the next session. Also names the session and drives an attended compact-and-continue.",
       "version": "0.11.2",
       "author": {
         "name": "David Allouche"
