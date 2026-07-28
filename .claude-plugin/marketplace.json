@@ -147,7 +147,7 @@
         "repo": "ddaanet/gitlore"
       },
       "description": "Versioned, shared, git-backed memory for Claude Code.",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "author": {
         "name": "David Allouche"
       },
