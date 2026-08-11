@@ -259,6 +259,21 @@
       },
       "repository": "https://github.com/ddaanet/shell-scripting",
       "license": "MIT"
+    },
+    {
+      "name": "prohibitions",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/prohibitions"
+      },
+      "description": "Hooks that intercept ddaanet behavioural rules at the moment of action, replacing always-on prose with mechanical enforcement.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche",
+        "email": "david@ddaa.net"
+      },
+      "repository": "https://github.com/ddaanet/prohibitions",
+      "license": "MIT"
     }
   ]
 }
