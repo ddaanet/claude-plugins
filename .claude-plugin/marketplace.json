@@ -274,6 +274,20 @@
       },
       "repository": "https://github.com/ddaanet/prohibitions",
       "license": "MIT"
+    },
+    {
+      "name": "edify",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/edify"
+      },
+      "description": "A lean bundle of framework-agnostic Claude Code skills",
+      "version": "0.1.0",
+      "author": {
+        "name": ""
+      },
+      "repository": "https://github.com/ddaanet/edify",
+      "license": "MIT"
     }
   ]
 }
