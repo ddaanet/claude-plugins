@@ -204,27 +204,6 @@
       ]
     },
     {
-      "name": "unsandbox-git-status",
-      "source": {
-        "source": "github",
-        "repo": "ddaanet/unsandbox-git-status"
-      },
-      "description": "Forces `git status` to run with the Claude Code command sandbox disabled, so it reports the real working tree instead of phantom sandbox-mount entries.",
-      "version": "0.2.0",
-      "author": {
-        "name": "David Allouche"
-      },
-      "repository": "https://github.com/ddaanet/unsandbox-git-status",
-      "license": "MIT",
-      "keywords": [
-        "git",
-        "sandbox",
-        "hook",
-        "pretooluse",
-        "claude-code"
-      ]
-    },
-    {
       "name": "candidature",
       "source": {
         "source": "github",

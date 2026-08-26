@@ -21,7 +21,6 @@ Claude Code plugin marketplace by [ddaanet](https://github.com/ddaanet).
 | [gitlore](https://github.com/ddaanet/gitlore) | Versioned, shared, git-backed memory for Claude Code | `ddaanet/gitlore` |
 | [onekeys](https://github.com/ddaanet/onekeys) | UserPromptSubmit hook that expands single-character prompts into full instructions (c → Continue, h → /handoff:handoff). Mappings live in ~/.claude/onekeyers.txt | `ddaanet/onekeys` |
 | [cwd-safety](https://github.com/ddaanet/cwd-safety) | Keeps the agent's Bash working directory at project root: a PreToolUse(Bash) hook blocks drift-inducing `cd` commands and commands run from a drifted cwd; a PostToolUse(Bash) hook warns after the working directory changes | `ddaanet/cwd-safety` |
-| [unsandbox-git-status](https://github.com/ddaanet/unsandbox-git-status) | Forces `git status` to run with the Claude Code command sandbox disabled, so it reports the real working tree instead of phantom sandbox-mount entries | `ddaanet/unsandbox-git-status` |
 | [candidature](https://github.com/ddaanet/candidature) | Candidature assistée : préparation, lettre de motivation, CV adapté, relecture, suivi des retours. Stockage Notion. Contenu français | `ddaanet/candidature` |
 | [shell-scripting](https://github.com/ddaanet/shell-scripting) | Shell scripting gotchas skill plus automatic shellcheck feedback on edited shell files | `ddaanet/shell-scripting` |
 
