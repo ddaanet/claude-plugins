@@ -261,7 +261,7 @@
         "repo": "ddaanet/edify"
       },
       "description": "A lean bundle of framework-agnostic Claude Code skills",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "David Allouche",
         "email": "david@ddaa.net"
