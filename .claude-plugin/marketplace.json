@@ -257,8 +257,9 @@
     {
       "name": "edify",
       "source": {
-        "source": "github",
-        "repo": "ddaanet/edify"
+        "source": "git-subdir",
+        "url": "ddaanet/edify",
+        "path": "plugin"
       },
       "description": "A lean bundle of framework-agnostic Claude Code skills",
       "version": "0.2.0",
