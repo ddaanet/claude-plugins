@@ -269,6 +269,21 @@
       },
       "repository": "https://github.com/ddaanet/edify",
       "license": "MIT"
+    },
+    {
+      "name": "craft",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/craft"
+      },
+      "description": "Guidance skills for design docs, plans and specs, test discipline, agent-facing directives, and tooling-change hygiene.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche",
+        "email": "david@ddaa.net"
+      },
+      "repository": "https://github.com/ddaanet/craft",
+      "license": "MIT"
     }
   ]
 }
