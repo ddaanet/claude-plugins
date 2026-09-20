@@ -25,7 +25,7 @@ Each `plugins[]` entry needs `name` and `source` (GitHub object with `repo`). Op
 
 ## Common Operations
 
-- **Add a plugin:** add an entry to `plugins[]` in `marketplace.json` + a row to the table in `README.md`.
+- **Add a plugin:** add an entry to `plugins[]` in `marketplace.json` + a `##` section in `README.md` (before "License"), summarized from the plugin's own README.
 - **Update a plugin:** edit the entry in `marketplace.json`, keep `README.md` in sync.
 
 ## Plugin Ecosystem
