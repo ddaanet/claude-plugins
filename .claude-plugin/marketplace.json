@@ -261,8 +261,8 @@
         "url": "ddaanet/edify",
         "path": "plugin"
       },
-      "description": "A lean bundle of framework-agnostic Claude Code skills",
-      "version": "0.2.0",
+      "description": "A lean bundle of Claude Code skills and agents built around a requirements → design → runbook → build planning pipeline",
+      "version": "0.3.0",
       "author": {
         "name": "David Allouche",
         "email": "david@ddaa.net"
