@@ -28,6 +28,14 @@ Each `plugins[]` entry needs `name` and `source` (GitHub object with `repo`). Op
 - **Add a plugin:** add an entry to `plugins[]` in `marketplace.json` + a `##` section in `README.md` (before "License"), summarized from the plugin's own README.
 - **Update a plugin:** edit the entry in `marketplace.json`, keep `README.md` in sync.
 
+## Writing a README Section
+
+- One `##` section per plugin, no summary table. The install command and prerequisites go inside the section; the top "Install" section carries only the marketplace command.
+- Check what the plugin's README and `plugin.json` claim against its content — `skills/*/SKILL.md`, `hooks/hooks.json`, bootstrap scripts — and describe what the plugin does, not how it rates itself. Self-descriptions such as "lightweight" or "framework-agnostic" have been wrong, a README has misdescribed its own skill, and a manual install step turned out to be done by a SessionStart hook.
+- Name mechanisms concretely (tmux `send-keys`, a SessionStart bootstrap) rather than paraphrasing them.
+- Describe the published state (`origin/main`) when the local clone is ahead of it.
+- Wording that is wrong at the source gets a brief in that repo's `inbox/`. `marketplace.json` descriptions keep matching the plugin's `plugin.json`, which wins under the default `strict: true`.
+
 ## Plugin Ecosystem
 
 | Plugin | Repo | Local path |
