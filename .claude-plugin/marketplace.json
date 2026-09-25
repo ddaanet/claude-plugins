@@ -277,7 +277,7 @@
         "repo": "ddaanet/craft"
       },
       "description": "Guidance skills for design docs, plans and specs, test discipline, agent-facing directives, and tooling-change hygiene.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": {
         "name": "David Allouche",
         "email": "david@ddaa.net"
