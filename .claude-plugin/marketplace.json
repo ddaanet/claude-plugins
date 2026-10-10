@@ -262,7 +262,7 @@
         "path": "plugin"
       },
       "description": "A lean bundle of Claude Code skills and agents built around a requirements → design → runbook → build planning pipeline",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": {
         "name": "David Allouche",
         "email": "david@ddaa.net"
