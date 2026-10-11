@@ -102,10 +102,11 @@
       "name": "handoff",
       "source": {
         "source": "github",
-        "repo": "ddaanet/handoff"
+        "repo": "ddaanet/handoff",
+        "ref": "v0.15.0"
       },
       "description": "Task snapshot that survives a /clear or /compact in Claude Code: the agent writes the current task, open decisions, and remaining todos to a local file, and a SessionStart hook injects it verbatim into the next session. Also names the session and drives an attended compact-and-continue.",
-      "version": "0.16.0",
+      "version": "0.15.0",
       "author": {
         "name": "David Allouche"
       },
