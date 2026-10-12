@@ -300,6 +300,21 @@
       },
       "repository": "https://github.com/ddaanet/plugin-craft",
       "license": "MIT"
+    },
+    {
+      "name": "sandbox-lies",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/sandbox-lies"
+      },
+      "description": "Hooks that watch Bash tool output for results the command sandbox has distorted, and annotate them so the reader stops trusting a confidently wrong result.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche",
+        "email": "david@ddaa.net"
+      },
+      "repository": "https://github.com/ddaanet/sandbox-lies",
+      "license": "MIT"
     }
   ]
 }
