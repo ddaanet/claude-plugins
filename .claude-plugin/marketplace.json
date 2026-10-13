@@ -247,7 +247,7 @@
         "url": "https://github.com/ddaanet/prohibitions.git"
       },
       "description": "Hooks that intercept ddaanet behavioural rules at the moment of action, replacing always-on prose with mechanical enforcement.",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": {
         "name": "David Allouche",
         "email": "david@ddaa.net"
