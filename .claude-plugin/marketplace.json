@@ -315,6 +315,21 @@
       },
       "repository": "https://github.com/ddaanet/sandbox-lies",
       "license": "MIT"
+    },
+    {
+      "name": "ghmem",
+      "source": {
+        "source": "github",
+        "repo": "ddaanet/ghmem"
+      },
+      "description": "Institutional-memory pipeline for a GitHub repository: a CLI plus contained triage and synthesis subagents.",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche",
+        "email": "david@ddaa.net"
+      },
+      "repository": "https://github.com/ddaanet/ghmem",
+      "license": "MIT"
     }
   ]
 }
