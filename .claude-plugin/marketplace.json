@@ -319,8 +319,8 @@
     {
       "name": "ghmem",
       "source": {
-        "source": "github",
-        "repo": "ddaanet/ghmem"
+        "source": "url",
+        "url": "https://github.com/ddaanet/ghmem.git"
       },
       "description": "Institutional-memory pipeline for a GitHub repository: a CLI plus contained triage and synthesis subagents.",
       "version": "0.1.0",
