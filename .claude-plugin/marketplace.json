@@ -151,7 +151,7 @@
         "url": "https://github.com/ddaanet/gitlore.git"
       },
       "description": "Versioned, shared, git-backed memory for Claude Code.",
-      "version": "0.10.0",
+      "version": "0.10.1",
       "author": {
         "name": "David Allouche"
       },
