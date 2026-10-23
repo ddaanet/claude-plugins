@@ -282,10 +282,11 @@
       "name": "craft",
       "source": {
         "source": "url",
-        "url": "https://github.com/ddaanet/craft.git"
+        "url": "https://github.com/ddaanet/craft.git",
+        "ref": "dist"
       },
       "description": "Guidance skills for design docs, plans and specs, test discipline, agent-facing directives, and tooling-change hygiene.",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "author": {
         "name": "David Allouche",
         "email": "david@ddaa.net"
