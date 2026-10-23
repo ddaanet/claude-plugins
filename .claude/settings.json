@@ -1,7 +1,5 @@
 {
-  "enabledPlugins": {
-    "gitlore@ddaanet": true
-  },
+  "enabledPlugins": {},
   "gitlore": {
     "enabled": true,
     "precommitCommand": ""
