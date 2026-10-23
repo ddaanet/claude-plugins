@@ -192,10 +192,11 @@
       "name": "cwd-safety",
       "source": {
         "source": "url",
-        "url": "https://github.com/ddaanet/cwd-safety.git"
+        "url": "https://github.com/ddaanet/cwd-safety.git",
+        "ref": "dist"
       },
       "description": "Keeps the agent's Bash working directory at project root: a PreToolUse(Bash) hook blocks drift-inducing `cd` commands and commands run from a drifted cwd; a PostToolUse(Bash) hook warns after the working directory changes.",
-      "version": "0.6.1",
+      "version": "0.6.2",
       "author": {
         "name": "David Allouche"
       },
