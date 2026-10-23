@@ -127,10 +127,11 @@
       "name": "gitmoji",
       "source": {
         "source": "url",
-        "url": "https://github.com/ddaanet/gitmoji.git"
+        "url": "https://github.com/ddaanet/gitmoji.git",
+        "ref": "dist"
       },
       "description": "Commit-msg git hook that replaces conventional-commit prefixes (feat:, fix:, docs:, ...) with gitmoji emojis. Ships an installer command that stows the hook into the current git repo.",
-      "version": "0.5.1",
+      "version": "0.5.2",
       "author": {
         "name": "David Allouche"
       },
