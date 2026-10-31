@@ -304,7 +304,7 @@
         "ref": "dist"
       },
       "description": "Building on the Claude Code harness: authoring and debugging hooks, writing skills, and verifying that the plugin code actually running is the code you just edited.",
-      "version": "0.1.5",
+      "version": "0.1.6",
       "author": {
         "name": "David Allouche",
         "email": "david@allouche.net"
