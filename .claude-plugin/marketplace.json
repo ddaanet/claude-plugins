@@ -64,7 +64,7 @@
         "url": "https://github.com/ddaanet/skills.git",
         "path": "plugins/ddaa-handoff"
       },
-      "description": "Resume-summary handoff (EN) — end-of-session summary to continue in a new chat, delivered to Notion when available. Enable this OR the lightweight `handoff` plugin, not both.",
+      "description": "Resume-summary handoff (EN) — end-of-session summary to continue work in a new chat, delivered to Notion when available. Enable this OR the autodrive-handoff plugin (local task snapshot), not both.",
       "version": "0.6.0",
       "author": {
         "name": "David Allouche"
@@ -86,7 +86,7 @@
         "url": "https://github.com/ddaanet/skills.git",
         "path": "plugins/ddaa-passation"
       },
-      "description": "Passation résumé de session (FR) — résumé de fin de session pour continuer dans un nouveau chat, livré sur Notion quand c'est disponible. Activer celui-ci OU le plugin `handoff` léger, pas les deux.",
+      "description": "Passation résumé de session (FR) — résumé de fin de session pour continuer dans un nouveau chat, livré sur Notion quand c'est disponible. Activer celui-ci OU le plugin autodrive-handoff (instantané local de la tâche), pas les deux.",
       "version": "0.6.0",
       "author": {
         "name": "David Allouche"

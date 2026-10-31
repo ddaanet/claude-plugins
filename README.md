@@ -31,7 +31,7 @@ conversation.
 
 `handoff` / `passation` live in their own plugins so each project decides
 separately. They are most useful in hybrid projects where Claude Code
-cooperates with claude.ai. For code-only work, the `handoff` plugin — a
+cooperates with claude.ai. For code-only work, the `autodrive-handoff` plugin — a
 local task snapshot rather than a full session summary — covers the same
 ground.
 
@@ -50,7 +50,7 @@ Français :
 ```
 
 Install one language per project, not both. Enable `ddaa-handoff` /
-`ddaa-passation` OR the `handoff` plugin, not both.
+`ddaa-passation` OR the `autodrive-handoff` plugin, not both.
 
 ## handoff
 
