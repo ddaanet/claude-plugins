@@ -31,9 +31,9 @@ conversation.
 
 `handoff` / `passation` live in their own plugins so each project decides
 separately. They are most useful in hybrid projects where Claude Code
-cooperates with claude.ai. For code-only work, the `autodrive-handoff` plugin — a
-local task snapshot rather than a full session summary — covers the same
-ground.
+cooperates with claude.ai. For code-only work, the `autodrive-handoff`
+plugin — a local task snapshot rather than a full session summary — covers
+the same ground.
 
 English:
 
@@ -52,29 +52,32 @@ Français :
 Install one language per project, not both. Enable `ddaa-handoff` /
 `ddaa-passation` OR the `autodrive-handoff` plugin, not both.
 
-## handoff
+## autodrive-handoff
 
-[ddaanet/handoff](https://github.com/ddaanet/handoff) — a task snapshot that
-survives a context reset, whether `/clear` or `/compact`. A narrow complement
-to Claude Code's auto-memory: memory holds durable facts; this plugin holds
-the *ephemeral task frame* — what you were doing right now, what decisions
-are still open. A `SessionStart` hook injects the snapshot back, verbatim,
-into whatever comes next.
+[ddaanet/autodrive-handoff](https://github.com/ddaanet/autodrive-handoff) — a
+task frame that survives a `/clear` or `/compact`. Before the reset, the agent
+writes the task in hand to `TASK.md` and the open decisions and remaining
+todos to `TODO.md`, in the project root; `SessionStart` hooks inject them
+back, verbatim, into the next session. Before a `/compact` only `TODO.md` is
+written, since the compaction summary carries the task.
 
-- `/handoff:handoff` — Snapshot the task before a `/clear`. On "clear and continue", also names the session, types `/clear` and submits a one-line prompt that resumes the work
-- `/handoff:precompact` — Same before a `/compact`; "compact and continue" types `/compact` and resumes afterwards
-- `/handoff:autoname` — Rename the session from the conversation, nothing else
-- `/handoff:restart` — Exit and relaunch with `--resume` to pick up plugin, hook or settings changes; the conversation carries over whole
-- `/handoff:pending` — List the pending items — open decisions and remaining todos — from the task frame injected at session start, with no tool calls
+- `/autodrive-handoff:handoff` — Write the task frame before a `/clear` and rename the session. On "handoff and continue", also clears and submits one fixed prompt that resumes the work; "handoff, commit" commits the two files with the session's work
+- `/autodrive-handoff:precompact` — Write `TODO.md` before a `/compact`; "compact and continue" runs `/compact` and resumes afterwards
+- `/autodrive-handoff:autoname` — Rename the session from the conversation, nothing else
+- `/autodrive-handoff:pending` — List the open decisions and remaining todos from the task frame injected at session start, with no tool calls
 
-Typing commands into the prompt is done through tmux `send-keys`; outside
-tmux, the lines are printed for you to paste.
+The `/rename`, `/clear` and `/compact` lines are submitted at turn end by the
+plugin's mod, which runs only what `handoff-checkpoint` wrote to
+`.claude/autodrive`. Where the transition cannot run, you are told at your
+next prompt, with the commands to run by hand. Enable one handoff provider per
+project: this plugin or `ddaa-handoff` / `ddaa-passation`.
 
 ```
-/plugin install handoff@ddaanet
+/plugin install autodrive-handoff@ddaanet
 ```
 
-No per-project setup. Needs `python3` and `jq` on `PATH`; tmux is optional.
+No per-project setup. Needs Claude Code 2.1.287 or newer, and `python3` and
+`jq` on `PATH`.
 
 ## gitmoji
 
@@ -209,7 +212,7 @@ Needs `bash` and `jq`.
 [ddaanet/edify](https://github.com/ddaanet/edify) — skills and agents
 built around a requirements → design → runbook → execution planning
 pipeline. Recall reads the project's `memory/MEMORY.md`, and the session task
-frame is the `handoff` plugin's.
+frame is the `autodrive-handoff` plugin's.
 
 - **Pipeline** — `/requirements` → `/design` → `/runbook` → `/orchestrate`
   (or `/inline` for work that needs no runbook), with `/review` as the
