@@ -262,6 +262,60 @@ for building on the Claude Code harness.
 /plugin install plugin-craft@ddaanet
 ```
 
+## sandbox-lies
+
+[ddaanet/sandbox-lies](https://github.com/ddaanet/sandbox-lies) — annotates
+Bash results that the Claude Code command sandbox has distorted. Such results
+are confidently wrong and carry no marker: a git lock held by a process that
+does not exist, `git status` listing dotfiles that are really `/dev/null`
+masks, a write refused as read-only on a path that is writable. A
+`PostToolUse` / `PostToolUseFailure` hook on Bash matches the result text
+against nine detectors (git and config locks, phantom mask files, read-only
+paths, a collapsed `$TMPDIR`, a lost `--resume` transcript, a sandbox that
+failed to start). On a match it adds a paragraph for the agent, as hook
+context, saying what the output means and what to do instead, plus a one-line
+note for you. Where the answer depends on machine state, it first checks
+outside the sandbox: whether the lock exists and who holds it, or whether the
+path is writable there. It never blocks or rewrites a call.
+
+The `sandbox-lies` skill covers what leaves no symptom in the output: what an
+`excludedCommands` entry actually unsandboxes, what each escape costs, why
+`$TMPDIR` does not survive a call, how masks break a cleanliness gate.
+
+```
+/plugin install sandbox-lies@ddaanet
+```
+
+Needs `jq`: without it the hook stays silent and a `SessionStart` check says
+so. Restart Claude Code after installing or updating. Verified on Linux
+(bubblewrap); the macOS sandbox's messages and masks are unverified.
+
+## ghmem
+
+[ddaanet/ghmem](https://github.com/ddaanet/ghmem) — pulls a GitHub
+repository's issue, PR, discussion and commit history into a local corpus
+that agents query instead of the GitHub API, then routes it into living
+topic docs. The `ghmem` CLI syncs into an append-only ledger with a SQLite
+mirror and serves the read commands (`show`, `heat`, `status`, ...). The
+`ghmem-triage` subagent routes metered batches of items to topics, and
+`ghmem-synthesize` rewrites one topic into `docs/design/<topic>.md`.
+
+The subagents read text anyone can file on GitHub, so `PreToolUse` hooks
+contain them: Bash is held to `ghmem` invocations, triage's Read to
+`corpus/packets/`, synthesis's Read, Write and Edit to `docs/design/`. These
+hooks run on every Bash, Read, Write and Edit call of a session with the
+plugin enabled and pass through any call not made by those two agents.
+
+```
+/plugin install ghmem@ddaanet
+```
+
+A `SessionStart` hook builds the CLI's virtualenv inside the plugin with
+`uv`, falling back to `pip` with a Python ≥ 3.14; the containment hooks need
+`python3`. The project needs a `corpus/target.toml` naming the repository to
+mirror, and `sync` needs a GitHub token (`$GITHUB_TOKEN`, else
+`gh auth token`).
+
 ## License
 
 MIT

@@ -26,7 +26,7 @@ Each `plugins[]` entry needs `name` and `source` (GitHub object with `repo`). Op
 ## Common Operations
 
 - **Add a plugin:** add an entry to `plugins[]` in `marketplace.json` + a `##` section in `README.md` (before "License"), summarized from the plugin's own README.
-- **Update a plugin:** edit the entry in `marketplace.json`, keep `README.md` in sync.
+- **Update a plugin:** edit the entry in `marketplace.json`, keep `README.md` in sync. For `ddaa*` entries, `just release` in `../skills` sets `version` and `description` from each `plugin.json`; edit the description there, not here.
 
 ## Writing a README Section
 
