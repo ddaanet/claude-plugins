@@ -321,7 +321,7 @@
         "ref": "dist"
       },
       "description": "Hooks that watch Bash tool output for results the command sandbox has distorted, and annotate them so the reader stops trusting a confidently wrong result.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "author": {
         "name": "David Allouche",
         "email": "david@ddaa.net"
