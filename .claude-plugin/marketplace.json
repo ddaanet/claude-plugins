@@ -273,7 +273,7 @@
         "ref": "dist"
       },
       "description": "Working-discipline skills for an orchestrating agent: release cascade, per-commit review, subagent dispatch rules, a markdown fixer and a token counter",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "author": {
         "name": "David Allouche",
         "email": "david@ddaa.net"
