@@ -343,6 +343,21 @@
       },
       "repository": "https://github.com/ddaanet/ghmem",
       "license": "MIT"
+    },
+    {
+      "name": "cc-statusline",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ddaanet/cc-statusline.git",
+        "ref": "dist"
+      },
+      "description": "Statusline for Claude Code: a bash line renderer plus a mod for subagent rows and the Fable weekly limit",
+      "version": "0.1.0",
+      "author": {
+        "name": "David Allouche"
+      },
+      "repository": "https://github.com/ddaanet/cc-statusline",
+      "license": "MIT"
     }
   ]
 }
