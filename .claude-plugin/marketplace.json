@@ -352,7 +352,7 @@
         "ref": "dist"
       },
       "description": "Statusline for Claude Code: a bash line renderer plus a mod for subagent rows and the Fable weekly limit",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "author": {
         "name": "David Allouche"
       },
